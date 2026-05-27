@@ -108,7 +108,7 @@ USER MEMORY CONTEXT:
         contents=user_prompt,
         config=types.GenerateContentConfig(
             system_instruction=build_system_prompt(),
-            max_output_tokens=4096,
+            max_output_tokens=65536,
         )
     )
 
