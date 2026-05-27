@@ -5,11 +5,11 @@ Manages SQLite database for tracking your learning progress.
 
 Why SQLite?
 - It's a file-based database (just one .db file)
-- Built into Python — no installation needed
+- Built into Python - no installation needed
 - Perfect for single-user apps like this
 - You can open the .db file with DB Browser for SQLite to inspect it visually
 
-Key concept: This is your agent's "long-term memory" — it remembers what
+Key concept: This is your agent's "long-term memory" - it remembers what
 you've already learned so it doesn't repeat lessons and can build on prior topics.
 """
 

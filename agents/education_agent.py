@@ -3,7 +3,7 @@ Education Agent
 ---------------
 Determines what finance concept to teach today and prepares the lesson context.
 
-This agent doesn't call Claude itself — it prepares the "lesson brief"
+This agent doesn't call Claude itself - it prepares the "lesson brief"
 that gets included in the main orchestrator prompt.
 
 Key concept: By separating "what to teach" from "how to write it",

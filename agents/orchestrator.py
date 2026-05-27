@@ -41,7 +41,7 @@ USER MEMORY CONTEXT:
 - Total newsletters received: {newsletters_sent}
 - Learning stage: {"early beginner" if newsletters_sent < 14 else "intermediate" if newsletters_sent < 60 else "advanced"}
 - Recent topics covered: {', '.join(recent_topics) if recent_topics else 'none yet'}
-- Note: {"This is one of their first newsletters — be extra welcoming and encouraging." if newsletters_sent < 3 else ""}
+- Note: {"This is one of their first newsletters - be extra welcoming and encouraging." if newsletters_sent < 3 else ""}
 """
 
     user_prompt = f"""Write today's complete finance newsletter using the data below.
@@ -77,7 +77,7 @@ For each story include:
 - Why it matters for markets/economy
 - Potential implications for investors]
 
-<h2>Section 3: Finance Education — [Topic Name]</h2>
+<h2>Section 3: Finance Education - [Topic Name]</h2>
 [Write the full lesson as specified in the education brief above.]
 
 <h2>Section 4: Your Learning Journey</h2>

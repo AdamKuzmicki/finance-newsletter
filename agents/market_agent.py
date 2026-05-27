@@ -1,8 +1,8 @@
 Market Data Agent
   -----------------
   Fetches live stock indices, crypto, commodities, and treasury yields.
-  Uses yfinance — free, no API key required.
-Uses yfinance — free, no API key required.
+  Uses yfinance - free, no API key required.
+Uses yfinance - free, no API key required.
 Key concept: yfinance downloads historical OHLCV data from Yahoo Finance.
 We grab the last 2 days so we can calculate the daily change (today vs yesterday).
 """

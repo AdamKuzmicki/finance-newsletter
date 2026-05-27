@@ -41,7 +41,7 @@ def send_newsletter(newsletter_html: str) -> bool:
     Returns True if successful, False if there was an error.
     """
     today = datetime.now().strftime("%A, %B %d, %Y")
-    subject = f"📊 Finance Brief — {today}"
+    subject = f"📊 Finance Brief - {today}"
     
     # Wrap in HTML template
     full_html = wrap_in_template(newsletter_html)

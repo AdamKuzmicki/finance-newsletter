@@ -1,5 +1,5 @@
 """
-main.py — Entry Point
+main.py - Entry Point
 ---------------------
 This is the script that runs every morning at 7 AM via GitHub Actions.
 
@@ -12,7 +12,7 @@ It orchestrates the entire pipeline:
   6. Send via email
   7. Record progress
 
-Each step is in its own function/module — this is called "separation of concerns"
+Each step is in its own function/module - this is called "separation of concerns"
 and is a core software engineering principle.
 """
 
@@ -36,7 +36,7 @@ def run_newsletter_pipeline():
     """
     start_time = datetime.now()
     print(f"\n{'='*50}")
-    print(f"Finance Newsletter Pipeline — {start_time.strftime('%Y-%m-%d %H:%M')}")
+    print(f"Finance Newsletter Pipeline - {start_time.strftime('%Y-%m-%d %H:%M')}")
     print(f"{'='*50}\n")
     
     # Step 1: Initialize database (creates it if it doesn't exist)
@@ -85,7 +85,7 @@ def run_newsletter_pipeline():
     # Summary
     elapsed = (datetime.now() - start_time).seconds
     print(f"\n{'='*50}")
-    print(f"Pipeline complete in {elapsed}s — {'SUCCESS ✓' if success else 'FAILED ✗'}")
+    print(f"Pipeline complete in {elapsed}s - {'SUCCESS ✓' if success else 'FAILED ✗'}")
     print(f"{'='*50}\n")
     
     return success

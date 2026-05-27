@@ -34,7 +34,7 @@ def fetch_news(query: str, max_articles: int = 5) -> list[dict]:
     Returns a list of article dicts with keys:
       title, description, source, url, publishedAt
     """
-    # NewsAPI 'everything' endpoint — searches all sources
+    # NewsAPI 'everything' endpoint - searches all sources
     url = "https://newsapi.org/v2/everything"
     
     # Yesterday's date for filtering recent news
@@ -95,7 +95,7 @@ def get_all_news() -> list[dict]:
                 seen_titles.add(title_key)
                 all_articles.append(article)
         
-        print(f"  ✓ '{query[:30]}...' — {len(articles)} articles")
+        print(f"  ✓ '{query[:30]}...' - {len(articles)} articles")
     
     print(f"  Total unique articles: {len(all_articles)}")
     return all_articles[:20]  # cap at 20
