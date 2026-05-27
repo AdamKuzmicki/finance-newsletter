@@ -3,7 +3,7 @@
 
 CREATE TABLE IF NOT EXISTS learning_progress (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    topic TEXT NOT NULL,                    -- lesson topic name
+    topic TEXT NOT NULL UNIQUE,                    -- lesson topic name
     lesson_number INTEGER DEFAULT 0,        -- how many times covered
     difficulty_level INTEGER DEFAULT 1,     -- 1=beginner, 2=intermediate, 3=advanced
     last_taught DATE,                       -- when last covered
