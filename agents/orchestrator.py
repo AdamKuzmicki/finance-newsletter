@@ -6,7 +6,7 @@ from google.genai import types
 from config.settings import GEMINI_API_KEY
 
 client = genai.Client(api_key=GEMINI_API_KEY)
-MODEL = "gemini-2.0-flash"
+MODEL = "gemini-2.5-flash"
 
 def build_system_prompt() -> str:
     return """You are a brilliant personal finance intelligence assistant.
